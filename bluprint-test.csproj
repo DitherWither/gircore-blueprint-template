@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>bluprint_test</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="gircore.Adw-1" Version="0.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Include everything inside the build directory, but without the build prefix -->
+    <EmbeddedResource Include="build/MainWindow.ui">
+      <LogicalName>MainWindow.ui</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
