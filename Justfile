@@ -1,3 +1,6 @@
+run: build-blueprints
+    dotnet run
+    
 clean:
     dotnet clean
     rm -r ./build
@@ -11,5 +14,3 @@ build-blueprints:
 build: build-blueprints
     dotnet build
 
-run: build-blueprints
-    dotnet run

@@ -1,4 +1,4 @@
-namespace BlueprintTemplate.ui;
+namespace ui;
 
 public class MainWindow : Adw.ApplicationWindow
 {
