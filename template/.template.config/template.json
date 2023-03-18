@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Vardhan Patil(@DitherWither)",
+  "classifications": [ "Ihavenocluewhattoputhere TODO changethis", "GTK", "Gircore", "Blueprint" ], 
+  "identity": "io.github.DitherWither.gircore-blueprint-template",
+  "name": "Gircore With Gtk Blueprint App",
+  "shortName": "gircore-blueprint",
+  "sourceName": "gircore-blueprint",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
