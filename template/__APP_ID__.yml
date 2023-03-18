@@ -2,18 +2,21 @@ app-id: __APP_ID__
 runtime: org.gnome.Platform
 runtime-version: "43"
 sdk: org.gnome.Sdk
-command: gircore-blueprint
+command: run.sh
 finish-args:
   - "--share=network"
   - "--share=ipc"
-  - "--socket=x11" # TODO: Change this to fallback-x11 once it is found out why wayland isn't working
-  - "--socket=wayland"
+  - "--socket=fallback-x11" # TODO: Change this to fallback-x11 once it is found out why wayland isn't working
   - "--device=dri"
+  - "--socket=wayland"
 modules:
   - name: main-application
     buildsystem: simple
     build-commands:
       - "install -D gircore-blueprint /app/bin/gircore-blueprint"
+      - "install -D flatpak-runner.sh /app/bin/run.sh"
     sources:
       - type: file
         path: gircore-blueprint
+      - type: file
+        path: flatpak-runner.sh
