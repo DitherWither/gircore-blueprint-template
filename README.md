@@ -13,7 +13,7 @@ I personally prefer just, as it is simpler for our use case as we arn't building
 
 # Installing
 
-- Install the latest version of the dotnet sdk (https://dotnet.microsoft.com/en-us/download)
+- Install the latest version of the [dotnet sdk](https://dotnet.microsoft.com/en-us/download)
 - Install the [blueprint compiler](https://jwestman.pages.gitlab.gnome.org/blueprint-compiler/index.html).
 - Install [just](https://github.com/casey/just) or some version of make.
 - Install this template using `dotnet new install <path to this repo>/template/`
