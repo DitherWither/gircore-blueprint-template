@@ -24,6 +24,5 @@ Just run `dotnet run` in the project directory. The blueprints will be compiled 
 
 # TODO for this template
 
-- [ ] Add a way to add blueprints to the project without having to edit the csproj file.
 - [ ] Add flatpak support.
 - [ ] Publish this template to nuget.
