@@ -9,5 +9,13 @@
   "tags": {
     "language": "C#",
     "type": "project"
+  },
+  "symbols": {
+    "app-id": {
+      "type": "parameter",
+      "description": "The application id, see https://developer.gnome.org/documentation/tutorials/application-id.html",
+      "replaces": "__APP_ID__", 
+      "isRequired": true
+    }
   }
 }
