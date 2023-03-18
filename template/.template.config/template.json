@@ -5,7 +5,7 @@
   "identity": "io.github.DitherWither.gircore-blueprint-template",
   "name": "Gircore With Gtk Blueprint App",
   "shortName": "gircore-blueprint",
-  "sourceName": "gircore-blueprint",
+  "sourceName": "__APP_NAME__",
   "tags": {
     "language": "C#",
     "type": "project"

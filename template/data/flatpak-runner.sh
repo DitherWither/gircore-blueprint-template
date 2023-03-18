@@ -4,4 +4,4 @@
 
 export GDK_BACKEND=$XDG_SESSION_TYPE
 
-gircore-blueprint
+__APP_NAME__

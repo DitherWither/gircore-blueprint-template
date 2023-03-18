@@ -13,10 +13,13 @@ modules:
   - name: main-application
     buildsystem: simple
     build-commands:
-      - "install -D gircore-blueprint /app/bin/gircore-blueprint"
+      - "install -D __APP_NAME__ /app/bin/__APP_NAME__"
       - "install -D flatpak-runner.sh /app/bin/run.sh"
+      - "install -D __APP_ID__.Desktop /app/share/applications/__APP_ID__.desktop"
     sources:
       - type: file
-        path: gircore-blueprint
+        path: __APP_NAME__
       - type: file
         path: flatpak-runner.sh
+      - type: file
+        path: __APP_ID__.Desktop
