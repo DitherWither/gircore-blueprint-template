@@ -13,7 +13,7 @@
 
   <PropertyGroup>
     <!-- Compile the blueprints -->
-    <PreBuildEvent>blueprint-compiler batch-compile $(MSBuildProjectDirectory)/build/
+    <PreBuildEvent>blueprint-compiler batch-compile $(MSBuildProjectDirectory)/build/ \
       $(MSBuildProjectDirectory)/blueprints $(MSBuildProjectDirectory)/blueprints/*.blp</PreBuildEvent>
   </PropertyGroup>
 
