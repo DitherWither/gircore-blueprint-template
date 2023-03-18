@@ -14,7 +14,7 @@ and [blueprint](https://jwestman.pages.gitlab.gnome.org/blueprint-compiler/index
 - Install dotnet-warp by running `dotnet tool install -g dotnet-warp`
 - Make the build script executable by running `chmod +x build_flatpak.sh`
 - Run the build script by running `./build_flatpak.sh`
-- The flatpak will be added to the `repo` repository.
+- The flatpak will be added to the `repo` repository. It should also get installed on your system
 
 # Steps for using
 
