@@ -4,12 +4,26 @@ using Adw 1;
 ApplicationWindow main_window {
   default-width: 600;
   default-height: 300;
-  title: _("Hello, Blueprint!");
+  title: "Hello, Blueprint!";
 
   [titlebar]
   HeaderBar {}
 
-  Label {
-    label: "Hello, Blueprint!";
+  Box {
+    orientation: vertical;
+
+    hexpand: true;
+    vexpand: true;
+
+    valign: center;
+
+    Label {
+      label: "Hello, Blueprint!";
+      styles ["title-1"]
+    }
+    Label {
+      label: "This is a starting point for your own application.";
+    }
+
   }
 }

@@ -11,11 +11,11 @@
     <PackageReference Include="gircore.Adw-1" Version="0.3.0" />
   </ItemGroup>
 
-  <PropertyGroup>
-    <!-- Compile the blueprints -->
-    <PreBuildEvent>blueprint-compiler batch-compile $(MSBuildProjectDirectory)/build/ \
-      $(MSBuildProjectDirectory)/blueprints $(MSBuildProjectDirectory)/blueprints/*.blp</PreBuildEvent>
-  </PropertyGroup>
+  <Target Name="BlueprintBuild" BeforeTargets="PrepareForBuild;Restore">
+    <!-- Build Blueprints -->
+    <Exec
+      Command="blueprint-compiler batch-compile $(MSBuildProjectDirectory)/build/ $(MSBuildProjectDirectory)/blueprints $(MSBuildProjectDirectory)/blueprints/*.blp" />
+  </Target>
 
 
   <Target Name="ExtraCleanup" AfterTargets="Clean">
@@ -29,10 +29,11 @@
   </Target>
 
 
+  <!-- Add the blueprints as a resource -->
   <ItemGroup>
-    <!-- Embed all ui files as an embedded resource-->
-    <EmbeddedResource Include="$(MSBuildProjectDirectory)/build/*.ui">
-      <LogicalName>%(Filename).ui</LogicalName>
+    <None Remove="**\*.ui" />
+    <EmbeddedResource Include="**\*.ui">
+      <LogicalName>%(Filename)%(Extension)</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
 </Project>
