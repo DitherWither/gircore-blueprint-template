@@ -19,6 +19,8 @@ and [blueprint](https://jwestman.pages.gitlab.gnome.org/blueprint-compiler/index
 # Steps for using
 
 - Create a new project using `dotnet new gircore-blueprint --app-id <app id>`, where app id follows the reverse domain name format. See [the documentation for app id on gnome docs](https://developer.gnome.org/documentation/tutorials/application-id.html)
+- (Optional) Change the name of the application inside the .desktop file to something more user-friendly.
+- (Optional) Add icons and appdata files to the project.
 
 # Building/Running
 
@@ -30,5 +32,5 @@ Just run `dotnet run` in the project directory. The blueprints will be compiled 
 
 # TODO for this template
 
-- [ ] Add a desktop file, and appdata files to the template.
+- [ ] Add icons and appdata files to the template.
 - [ ] Publish this template to nuget.
