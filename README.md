@@ -24,5 +24,5 @@ Just run `dotnet run` in the project directory. The blueprints will be compiled 
 
 # TODO for this template
 
-- [ ] Add flatpak support.
+- [ ] Make the flatpak work without x11.
 - [ ] Publish this template to nuget.

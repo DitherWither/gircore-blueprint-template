@@ -15,7 +15,8 @@
       "type": "parameter",
       "description": "The application id, see https://developer.gnome.org/documentation/tutorials/application-id.html",
       "replaces": "__APP_ID__", 
-      "isRequired": true
+      "isRequired": true,
+      "fileRename": "__APP_ID__" // So that the flatpak manifest is renamed to the app-id
     }
   }
 }

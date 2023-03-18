@@ -1,0 +1,19 @@
+app-id: __APP_ID__
+runtime: org.gnome.Platform
+runtime-version: "43"
+sdk: org.gnome.Sdk
+command: gircore-blueprint
+finish-args:
+  - "--share=network"
+  - "--share=ipc"
+  - "--socket=x11" # TODO: Change this to fallback-x11 once it is found out why wayland isn't working
+  - "--socket=wayland"
+  - "--device=dri"
+modules:
+  - name: main-application
+    buildsystem: simple
+    build-commands:
+      - "install -D gircore-blueprint /app/bin/gircore-blueprint"
+    sources:
+      - type: file
+        path: gircore-blueprint

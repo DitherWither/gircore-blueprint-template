@@ -28,7 +28,6 @@
     <RemoveDir Directories="$(MSBuildProjectDirectory)/build" />
   </Target>
 
-
   <!-- Add the blueprints as a resource -->
   <ItemGroup>
     <None Remove="**\*.ui" />
