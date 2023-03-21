@@ -7,7 +7,7 @@ and [blueprint](https://jwestman.pages.gitlab.gnome.org/blueprint-compiler/index
 
 - Install the latest version of the [dotnet sdk](https://dotnet.microsoft.com/en-us/download)
 - Install the [blueprint compiler](https://jwestman.pages.gitlab.gnome.org/blueprint-compiler/index.html).
-- Install this template using `dotnet new install <path to this repo>/template/`
+- Install this template using `dotnet new install DitherWither.GirCoreTemplates`
 
 
 ## Steps for using
@@ -19,5 +19,3 @@ Create a new project using `dotnet new gircore-blueprint --app-id com.example.My
 # TODO for this template
 
 - [ ] Add icons and appdata files to the template.
-- [ ] Publish this template to nuget.
-- [ ] Add a readme inside the template directory explaining how to use it.

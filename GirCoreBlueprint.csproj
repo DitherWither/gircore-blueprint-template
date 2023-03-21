@@ -8,7 +8,8 @@
       <Authors>DitherWither</Authors>
       <Description>Templates to use when creating an application using Gircore</Description>
       <PackageTags>dotnet-new;templates;gircore;gobject;gtk;gnome</PackageTags>
-  
+      <PackageReadmeFile>README.md</PackageReadmeFile>
+
       <TargetFramework>net7.0</TargetFramework>
   
       <IncludeContentInPack>true</IncludeContentInPack>
@@ -21,6 +22,7 @@
     <ItemGroup>
       <Content Include="template/**/*" Exclude="template/bin/**;template/obj/**;template/build/**; template/flatpak_build/**" />
       <Compile Remove="**/*" />
+      <None Include="README.md" Pack="true" PackagePath="/"/>
     </ItemGroup>
   
   </Project>
