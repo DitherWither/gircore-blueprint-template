@@ -1,5 +1,19 @@
 #!/bin/sh
 
+if ! command -v flatpak-builder &> /dev/null
+then
+    echo "flatpak-builder could not be found"
+    exit
+fi
+
+if ! command -v dotnet-warp &> /dev/null
+then
+    echo "dotnet-warp could not be found"
+    echo "Please install it with 'dotnet tool install -g dotnet-warp'"
+    echo "and make sure it is in your \$PATH"
+    exit
+fi
+
 # Create a new build directory
 rm -r flatpak_build/ # Remove the old build directory
 mkdir -p flatpak_build/
