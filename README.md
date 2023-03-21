@@ -34,3 +34,4 @@ Just run `dotnet run` in the project directory. The blueprints will be compiled 
 
 - [ ] Add icons and appdata files to the template.
 - [ ] Publish this template to nuget.
+- [ ] Add a readme inside the template directory explaining how to use it.
