@@ -1,8 +1,8 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Vardhan Patil(@DitherWither)",
-  "classifications": [ "Ihavenocluewhattoputhere TODO changethis", "GTK", "Gircore", "Blueprint" ], 
-  "identity": "io.github.DitherWither.gircore-blueprint-template",
+  "author": "Vardhan Patil (@DitherWither)",
+  "classifications": [  "GTK", "Gircore", "Blueprint" ], // TODO: Actually see what classifications are available
+  "identity": "DitherWither.gircore-blueprint",
   "name": "Gircore With Gtk Blueprint App",
   "shortName": "gircore-blueprint",
   "sourceName": "__APP_NAME__",
@@ -17,6 +17,12 @@
       "replaces": "__APP_ID__", 
       "isRequired": true,
       "fileRename": "__APP_ID__" // So that the flatpak manifest is renamed to the app-id
+    },
+    "display-name": {
+      "type": "parameter",
+      "description": "The display name of the application, used in various places like the header bar",
+      "replaces": "__DISPLAY_NAME__",
+      "isRequired": true
     }
   }
 }
